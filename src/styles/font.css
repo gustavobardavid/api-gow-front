@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'gow-font';
+    src: url(../assets/fonts/GODOFWAR.TTF) format('truetype');
+}
+
+.custom-font {
+  font-family: 'gow-font';
+}

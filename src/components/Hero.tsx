@@ -7,6 +7,7 @@ import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
+import '../styles/font.css';
 
 export default function Hero() {
   return (
@@ -31,6 +32,7 @@ export default function Hero() {
           <Typography
             component="h1"
             variant="h1"
+            className='custom-font'
             sx={{
               display: 'flex',
               flexDirection: { xs: 'column', md: 'row' },

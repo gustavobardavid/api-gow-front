@@ -10,6 +10,7 @@ import Typography from '@mui/material/Typography';
 import MenuItem from '@mui/material/MenuItem';
 import Drawer from '@mui/material/Drawer';
 import MenuIcon from '@mui/icons-material/Menu';
+import '../styles/font.css';
 
 const logoStyle = {
   width: '140px',
@@ -65,8 +66,8 @@ function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
               borderRadius: '999px',
               bgcolor:
                 theme.palette.mode === 'light'
-                  ? '#fff'
-                  : 'rgba(0, 0, 0, 0.4)',
+                  ? '#000'
+                  : '#A5AEB6',
               backdropFilter: 'blur(24px)',
               maxHeight: 40,
               border: '1px solid',
@@ -86,35 +87,34 @@ function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                 px: 0,
               }}
             >
-              <img
-                src={
-                  ''
-                }
-                style={logoStyle}
-                alt="logo"
-              />
+             <Typography className='logo' variant="h5" color="#fff" style={{fontFamily:'gow-font'}}>
+                    GoW DB
+                  </Typography>
               <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
                 <MenuItem
+                className='logo'
                   onClick={() => scrollToSection('features')}
                   sx={{ py: '6px', px: '12px' }}
                 >
-                  <Typography variant="body2" color="text.primary">
+                  <Typography className='logo'  color="#fff" style={{fontFamily:'gow-font'}}>
                     About
                   </Typography>
                 </MenuItem>
                 <MenuItem
+                className='logo'
                   onClick={() => scrollToSection('testimonials')}
                   sx={{ py: '6px', px: '12px' }}
                 >
-                  <Typography variant="body2" color="text.primary">
+                  <Typography className='logo' color="#fff" style={{fontFamily:'gow-font'}}>
                     Docs
                   </Typography>
                 </MenuItem>
                 <MenuItem
+                className='logo'
                   onClick={() => scrollToSection('highlights')}
                   sx={{ py: '6px', px: '12px' }}
                 >
-                  <Typography variant="body2" color="text.primary">
+                  <Typography className='logo' color="#fff" style={{fontFamily:'gow-font'}}>
                     Status
                   </Typography>
                 </MenuItem>
@@ -137,15 +137,15 @@ function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                 alignItems: 'center',
               }}
             >
-              
              
               <Button
-                color="primary"
+                color="error"
                 variant="contained"
                 size="small"
                 component="a"
                 href="/material-ui/getting-started/templates/sign-up/"
-                target="_blank"
+                target="_blank" 
+                style={{fontFamily:'gow-font'}}
               >
                 Get Started
               </Button>
@@ -153,7 +153,7 @@ function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
             <Box sx={{ display: { sm: '', md: 'none' } }}>
               <Button
                 variant="text"
-                color="primary"
+                color="error"
                 aria-label="menu"
                 onClick={toggleDrawer(true)}
                 sx={{ minWidth: '30px', p: '4px' }}
@@ -165,7 +165,7 @@ function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                   sx={{
                     minWidth: '60dvw',
                     p: 2,
-                    backgroundColor: 'background.paper',
+                    backgroundColor: '#A5AEB6',
                     flexGrow: 1,
                   }}
                 >
@@ -178,32 +178,31 @@ function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                     }}
                   >
                   </Box>
-                  <MenuItem onClick={() => scrollToSection('features')}>
+                  <MenuItem onClick={() => scrollToSection('features')} style={{fontFamily:'gow-font'}}>
                     About
                   </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('testimonials')}>
+                  <MenuItem onClick={() => scrollToSection('testimonials')} style={{fontFamily:'gow-font'}}>
                     Docs
                   </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('highlights')}>
+                  <MenuItem onClick={() => scrollToSection('highlights')} style={{fontFamily:'gow-font'}}>
                     Status
                   </MenuItem>
 
                   <Divider />
                   <MenuItem>
                     <Button
-                      color="primary"
+                      color="error"
                       variant="contained"
                       component="a"
                       href="/material-ui/getting-started/templates/sign-up/"
                       target="_blank"
-                      sx={{ width: '100%' }}
+                      sx={{ width: '100%' }} 
+                      style={{fontFamily:'gow-font'}}
                     >
                       Get Started
                     </Button>
                   </MenuItem>
-                  <MenuItem>
-                    
-                  </MenuItem>
+      
                 </Box>
               </Drawer>
             </Box>
