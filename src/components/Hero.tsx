@@ -45,6 +45,7 @@ export default function Hero() {
               component="span"
               variant="h1"
               style={{fontFamily:'gow-font'}}
+              color='#fff'
             >
               GoW DB
             </Typography>
