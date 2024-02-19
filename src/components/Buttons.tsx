@@ -35,7 +35,7 @@ export default function buttonCollection() {
       <Grid container justifyContent="center" spacing={2} sx={{ mt: 0 }}>
         {buttons.map((button, index) => (
           <Grid item key={index}>
-            <Button variant="contained" color="error" style={{fontFamily:'gow-font'}}>
+            <Button href={button.href} variant="contained" color="error" style={{fontFamily:'gow-font'}}>
               {button.label}
             </Button>
           </Grid>

@@ -11,6 +11,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Drawer from '@mui/material/Drawer';
 import MenuIcon from '@mui/icons-material/Menu';
 import '../styles/font.css';
+import { Link } from 'react-router-dom';
 
 const logoStyle = {
   width: '140px',
@@ -106,27 +107,33 @@ function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                   onClick={() => scrollToSection('header')}
                   sx={{ py: '6px', px: '12px' }}
                 >
+                  <Link to="/characters" style={{ textDecoration: 'none' }}>
                   <Typography className='logo' color="#fff" style={{fontFamily:'gow-font'}}>
                     Characters
                   </Typography>
+                  </Link>
                 </MenuItem>
                 <MenuItem
                 className='logo'
                   onClick={() => scrollToSection('header')}
                   sx={{ py: '6px', px: '12px' }}
                 >
+                  <Link to="/items" style={{ textDecoration: 'none' }}>
                   <Typography className='logo' color="#fff" style={{fontFamily:'gow-font'}}>
                     Items
                   </Typography>
+                  </Link>
                 </MenuItem>
                 <MenuItem
                 className='logo'
                   onClick={() => scrollToSection('header')}
                   sx={{ py: '6px', px: '12px' }}
                 >
+                  <Link to="/enemies" style={{ textDecoration: 'none' }}>
                   <Typography className='logo' color="#fff" style={{fontFamily:'gow-font'}}>
                     Enemies
                   </Typography>
+                  </Link>
                 </MenuItem>
                 
                 <MenuItem
