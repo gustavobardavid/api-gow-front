@@ -1,6 +1,6 @@
 import * as React from 'react';
 import axios from 'axios';
-import GameCard from './GameCard';
+import GameCard from '../components/GameCard';
 import { Grid } from '@mui/material';
 
 export default function Games() {
@@ -26,6 +26,8 @@ export default function Games() {
       if (loading) {
         return <div className="loading">Carregando...</div>;
       }return (
+        <div>
+          <h1>Games</h1>
         <Grid container spacing={2}>
       {games.map(game => (
         <Grid key={game.id} item xs={12} sm={6} md={4} lg={3}>
@@ -33,6 +35,7 @@ export default function Games() {
         </Grid>
       ))}
     </Grid>
+      </div>
     );
 }
 

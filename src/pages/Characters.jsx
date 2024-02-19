@@ -26,6 +26,8 @@ export default function Characters() {
       if (loading) {
         return <div className="loading">Carregando...</div>;
       }return (
+        <div>
+            <h1>Characters</h1>
         <Grid container spacing={2}>
       {characters.map(character => (
         <Grid key={character.id} item xs={12} sm={6} md={4} lg={3}>
@@ -33,6 +35,7 @@ export default function Characters() {
         </Grid>
       ))}
     </Grid>
+      </div>
     );
 }
 
