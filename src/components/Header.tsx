@@ -102,22 +102,14 @@ function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                 </MenuItem>
                 <MenuItem
                 className='logo'
-                  onClick={() => scrollToSection('testimonials')}
+                  onClick={() => scrollToSection('header')}
                   sx={{ py: '6px', px: '12px' }}
                 >
                   <Typography className='logo' color="#fff" style={{fontFamily:'gow-font'}}>
                     Docs
                   </Typography>
                 </MenuItem>
-                <MenuItem
-                className='logo'
-                  onClick={() => scrollToSection('highlights')}
-                  sx={{ py: '6px', px: '12px' }}
-                >
-                  <Typography className='logo' color="#fff" style={{fontFamily:'gow-font'}}>
-                    Status
-                  </Typography>
-                </MenuItem>
+                
                 <MenuItem
                   onClick={() => scrollToSection('pricing')}
                   sx={{ py: '6px', px: '12px' }}
@@ -183,9 +175,6 @@ function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                   </MenuItem>
                   <MenuItem onClick={() => scrollToSection('testimonials')} style={{fontFamily:'gow-font'}}>
                     Docs
-                  </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('highlights')} style={{fontFamily:'gow-font'}}>
-                    Status
                   </MenuItem>
 
                   <Divider />

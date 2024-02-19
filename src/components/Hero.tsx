@@ -7,6 +7,7 @@ import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import '../styles/font.css';
 
 export default function Hero() {
@@ -32,7 +33,6 @@ export default function Hero() {
           <Typography
             component="h1"
             variant="h1"
-            className='custom-font'
             sx={{
               display: 'flex',
               flexDirection: { xs: 'column', md: 'row' },
@@ -44,11 +44,12 @@ export default function Hero() {
             <Typography
               component="span"
               variant="h1"
+              style={{fontFamily:'gow-font'}}
             >
               GoW DB
             </Typography>
           </Typography>
-          <Typography textAlign="center" color='#fff'>
+          <Typography textAlign="center" color='#fff' style={{fontFamily:'gow-font'}} >
            A God of War DataBase
           </Typography>
           <Stack
@@ -58,7 +59,7 @@ export default function Hero() {
             useFlexGap
             sx={{ pt: 2, width: { xs: '100%', sm: 'auto' } }}
           >
-            <Button variant="contained" color="error">
+            <Button variant="contained" color="error" endIcon={<ArrowForwardIcon />} style={{fontFamily:'gow-font'}}>
               Get Started
             </Button>
           </Stack>
