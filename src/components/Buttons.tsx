@@ -7,15 +7,15 @@ import { Button } from '@mui/material';
 
 const dataButtons = [
     { label: 'Characters', color: 'primary', href: '/characters' },
-    { label: 'Games', color: 'secondary', href: '/games' },
     { label: 'Items', color: 'error', href: '/items' },
+    { label: 'Enemies', color: 'error', href: '/enemies' },
+    { label: 'Games', color: 'secondary', href: '/games' },
 ];
 
 const buttonStyle = {
   width: '100px',
   height: '80px',
-  margin: '0 32px',
-  opacity: 0.7,
+  margin: '0 32px'
 };
 
 export default function buttonCollection() {
@@ -32,7 +32,7 @@ export default function buttonCollection() {
       >
         Search our Database
       </Typography>
-      <Grid container justifyContent="center" spacing={2} sx={{ mt: 0.5, opacity: 0.6 }}>
+      <Grid container justifyContent="center" spacing={2} sx={{ mt: 0 }}>
         {buttons.map((button, index) => (
           <Grid item key={index}>
             <Button variant="contained" color="error" style={{fontFamily:'gow-font'}}>

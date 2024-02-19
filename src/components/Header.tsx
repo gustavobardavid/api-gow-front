@@ -97,7 +97,17 @@ function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                   sx={{ py: '6px', px: '12px' }}
                 >
                   <Typography className='logo'  color="#fff" style={{fontFamily:'gow-font'}}>
-                    About
+                    Games
+                  </Typography>
+                </MenuItem>
+                
+                <MenuItem
+                className='logo'
+                  onClick={() => scrollToSection('header')}
+                  sx={{ py: '6px', px: '12px' }}
+                >
+                  <Typography className='logo' color="#fff" style={{fontFamily:'gow-font'}}>
+                    Characters
                   </Typography>
                 </MenuItem>
                 <MenuItem
@@ -106,7 +116,16 @@ function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                   sx={{ py: '6px', px: '12px' }}
                 >
                   <Typography className='logo' color="#fff" style={{fontFamily:'gow-font'}}>
-                    Docs
+                    Items
+                  </Typography>
+                </MenuItem>
+                <MenuItem
+                className='logo'
+                  onClick={() => scrollToSection('header')}
+                  sx={{ py: '6px', px: '12px' }}
+                >
+                  <Typography className='logo' color="#fff" style={{fontFamily:'gow-font'}}>
+                    Enemies
                   </Typography>
                 </MenuItem>
                 
@@ -171,26 +190,19 @@ function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                   >
                   </Box>
                   <MenuItem onClick={() => scrollToSection('features')} style={{fontFamily:'gow-font'}}>
-                    About
+                    Games
                   </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('testimonials')} style={{fontFamily:'gow-font'}}>
-                    Docs
+                  <MenuItem onClick={() => scrollToSection('features')} style={{fontFamily:'gow-font'}}>
+                    Characters
+                  </MenuItem>
+                  <MenuItem onClick={() => scrollToSection('features')} style={{fontFamily:'gow-font'}}>
+                    Items
+                  </MenuItem>
+                  <MenuItem onClick={() => scrollToSection('features')} style={{fontFamily:'gow-font'}}>
+                    Enemies
                   </MenuItem>
 
                   <Divider />
-                  <MenuItem>
-                    <Button
-                      color="error"
-                      variant="contained"
-                      component="a"
-                      href="/material-ui/getting-started/templates/sign-up/"
-                      target="_blank"
-                      sx={{ width: '100%' }} 
-                      style={{fontFamily:'gow-font'}}
-                    >
-                      Get Started
-                    </Button>
-                  </MenuItem>
       
                 </Box>
               </Drawer>

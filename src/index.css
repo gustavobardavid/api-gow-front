@@ -106,3 +106,13 @@ button:focus-visible {
 footer {
   text-decoration: none;
 }
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    background-position: center;
+    background-position: 65% center; 
+  }
+  .hero-content {
+    padding: 10px;
+  }
+}
