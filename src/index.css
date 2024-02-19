@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #640000;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -23,6 +23,7 @@ a:hover {
 }
 
 body {
+  background-color: #640000;
   margin: 0;
   display: flex;
   place-items: center;
@@ -65,4 +66,19 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.hero {
+  background: url(../public/background.jpg);
+  background-size: cover; 
+  width: 1920px;
+  height: 60vh;
+  padding: 100px; 
+  border: #fff solid 2px;
+  border-radius: 20px;
+}
+
+.hero-content {
+  margin: 0 auto;
+  padding: 100px;
 }
