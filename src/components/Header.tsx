@@ -97,9 +97,12 @@ function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                   onClick={() => scrollToSection('features')}
                   sx={{ py: '6px', px: '12px' }}
                 >
+                  <Link to="/games" style={{ textDecoration: 'none' }}>
                   <Typography className='logo'  color="#fff" style={{fontFamily:'gow-font'}}>
                     Games
                   </Typography>
+                  </Link>
+
                 </MenuItem>
                 
                 <MenuItem
