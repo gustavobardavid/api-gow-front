@@ -42,7 +42,7 @@ export default function CharacterCard( {character}) {
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
-        height="280"
+        style={{ objectPosition: 'center top', height: 300, width: '100%', objectFit: 'cover' }}
         image={character.cover}
       />
       <CardContent>
