@@ -199,18 +199,26 @@ function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                     }}
                   >
                   </Box>
-                  <MenuItem onClick={() => scrollToSection('features')} style={{fontFamily:'gow-font'}}>
-                    Games
-                  </MenuItem>
+                  <Link to="/games" style={{ textDecoration: 'none' }}>
+                    <MenuItem onClick={() => scrollToSection('features')} style={{fontFamily:'gow-font'}}>
+                      Games
+                    </MenuItem>
+                  </Link>
+                  <Link to="/characters" style={{ textDecoration: 'none' }}>
                   <MenuItem onClick={() => scrollToSection('features')} style={{fontFamily:'gow-font'}}>
                     Characters
                   </MenuItem>
+                  </Link>
+                  <Link to="/items" style={{ textDecoration: 'none' }}>
                   <MenuItem onClick={() => scrollToSection('features')} style={{fontFamily:'gow-font'}}>
                     Items
                   </MenuItem>
+                  </Link>
+                  <Link to="/enemies" style={{ textDecoration: 'none' }}>
                   <MenuItem onClick={() => scrollToSection('features')} style={{fontFamily:'gow-font'}}>
                     Enemies
                   </MenuItem>
+                  </Link>
 
                   <Divider />
       
