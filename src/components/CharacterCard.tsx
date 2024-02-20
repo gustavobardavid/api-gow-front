@@ -42,8 +42,8 @@ export default function CharacterCard( {character}) {
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
-        height="194"
-        image=""
+        height="280"
+        image={character.cover}
       />
       <CardContent>
         <Typography variant="h5" color="#000" style={{fontFamily:'gow-font'}}>

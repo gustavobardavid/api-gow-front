@@ -1,3 +1,3 @@
-const url_api = 'https://gow-db-production.up.railway.app/v1';
+const url_api = 'http://localhost:3000/v1';
 
 export default url_api;

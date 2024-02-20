@@ -32,7 +32,7 @@ export default function Games() {
         <Grid container spacing={2}>
       {games.map(game => (
         <Grid key={game.id} item xs={12} sm={6} md={4} lg={3}>
-         <GameCard game={game} />
+         <GameCard className='card' game={game} />
         </Grid>
       ))}
     </Grid>

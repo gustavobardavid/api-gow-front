@@ -54,23 +54,19 @@ h1 {
   line-height: 1.1;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+.card {
+  will-change: filter;
+  transition: filter 300ms;
 }
 
-button:hover {
-  border-color: var(--primary);
+.card:hover {
+  filter: drop-shadow(0 0 px #ff0000aa);
 }
-button:focus,
-button:focus-visible {
+.card.react:hover {
+  filter: drop-shadow(0 0 2em #fb0303aa);
+}
+.card:focus,
+.card:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 

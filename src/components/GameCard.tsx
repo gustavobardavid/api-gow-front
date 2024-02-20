@@ -38,10 +38,10 @@ export default function gameCard( { game }) {
   };
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card className='card' sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
-        height="400"
+        style={{ objectPosition: 'center top', height: 300, width: '100%', objectFit: 'cover' }}
         image={game.cover}
       />
       <CardContent>
