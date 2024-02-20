@@ -11,7 +11,7 @@ export default function Characters() {
         const fetchData = async () => {
           try {
             const response = await axios.get(
-              `http://localhost:3000/v1/characters`
+              `${process.env.API}/characters`
             );
             setCharacters(response.data);
             setLoading(false); 

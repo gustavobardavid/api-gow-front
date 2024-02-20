@@ -11,7 +11,7 @@ export default function Games() {
         const fetchData = async () => {
           try {
             const response = await axios.get(
-              `http://localhost:3000/v1/games`
+              `${process.env.API}/games`
             );
             setGames(response.data);
             setLoading(false); 
