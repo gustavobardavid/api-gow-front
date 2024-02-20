@@ -158,18 +158,18 @@ function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                 alignItems: 'center',
               }}
             >
-             
+             <Link to="/docs" style={{ textDecoration: 'none' }}>
               <Button
                 color="error"
                 variant="contained"
                 size="small"
                 component="a"
-                href="/material-ui/getting-started/templates/sign-up/"
                 target="_blank" 
                 style={{fontFamily:'gow-font'}}
-              >
+                >
                 Get Started
               </Button>
+                </Link>
             </Box>
             <Box sx={{ display: { sm: '', md: 'none' } }}>
               <Button

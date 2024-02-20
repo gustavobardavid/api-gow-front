@@ -3,12 +3,12 @@ import { alpha } from '@mui/material';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
-import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import '../styles/font.css';
+import { Link } from 'react-router-dom';
 
 export default function Hero() {
   return (
@@ -60,9 +60,11 @@ export default function Hero() {
             useFlexGap
             sx={{ pt: 2, width: { xs: '100%', sm: 'auto' } }}
           >
+          <Link to="/docs" style={{ textDecoration: 'none' }}>
             <Button variant="contained" color="error" endIcon={<ArrowForwardIcon />} style={{fontFamily:'gow-font'}}>
               Get Started
             </Button>
+          </Link>
           </Stack>
         </Stack>  
       </Container>
