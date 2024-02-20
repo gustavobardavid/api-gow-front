@@ -2,7 +2,7 @@ import * as React from 'react';
 import axios from 'axios';
 import GameCard from '../components/GameCard';
 import { Grid } from '@mui/material';
-import  api from '../js/environments';
+import api from '../js/environments';
 
 export default function Games() {
     const [loading, setLoading] = React.useState(true);

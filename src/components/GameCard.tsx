@@ -14,7 +14,6 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import games from '../../../api/src/data/games';
 
 interface ExpandMoreProps extends IconButtonProps {
   expand: boolean;
@@ -42,8 +41,8 @@ export default function gameCard( { game }) {
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
-        height="194"
-        image=""
+        height="400"
+        image={game.cover}
       />
       <CardContent>
         <Typography variant="h5" color="#000" style={{fontFamily:'gow-font'}}>
