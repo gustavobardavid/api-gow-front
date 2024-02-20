@@ -2,6 +2,7 @@ import * as React from 'react';
 import axios from 'axios';
 import CharacterCard from '../components/CharacterCard';
 import { Grid } from '@mui/material';
+import  api from '../js/environments';
 
 export default function Characters() {
     const [loading, setLoading] = React.useState(true);
@@ -11,7 +12,7 @@ export default function Characters() {
         const fetchData = async () => {
           try {
             const response = await axios.get(
-              `${process.env.API}/characters`
+              `${api}/characters`
             );
             setCharacters(response.data);
             setLoading(false); 

@@ -2,6 +2,7 @@ import * as React from 'react';
 import axios from 'axios';
 import GameCard from '../components/GameCard';
 import { Grid } from '@mui/material';
+import  api from '../js/environments';
 
 export default function Games() {
     const [loading, setLoading] = React.useState(true);
@@ -11,8 +12,8 @@ export default function Games() {
         const fetchData = async () => {
           try {
             const response = await axios.get(
-              `${process.env.API}/games`
-            );
+              `${api}/games`
+              );
             setGames(response.data);
             setLoading(false); 
           } catch (error) {
