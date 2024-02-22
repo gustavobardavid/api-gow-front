@@ -54,6 +54,48 @@ h1 {
   line-height: 1.1;
 }
 
+h2, p, li {
+  color: #fff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+  font-family: 'gow-font';
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+}
+
+table th {
+  color: #fff;
+  text-align: left;
+  font-weight: bold;
+}
+
+table td {
+  color: #fff;
+}
+
+table tr:nth-child(even) {
+  background-color: #520000;
+}
+
+table tr:hover {
+  background-color: #6f0000;
+}
+
+table a {
+  text-decoration: underline;
+  font-family: system-ui;
+}
+
 .card {
   will-change: filter;
   transition: filter 300ms;

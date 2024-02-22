@@ -118,7 +118,7 @@ export default function Pricing() {
                   >
                     <Typography
                       component="text"
-                      style={{fontFamily:'gow-font'}}
+                      style={{fontFamily:'gow-font', textAlign: 'left'}}
                       sx={{
                         color:
                           tier.title === 'GoW API'

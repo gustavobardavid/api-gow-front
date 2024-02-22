@@ -14,6 +14,7 @@ import EdgesensorHighRoundedIcon from '@mui/icons-material/EdgesensorHighRounded
 import ViewQuiltRoundedIcon from '@mui/icons-material/ViewQuiltRounded';
 import IntroductionPage from './IntroductionPage';
 import GettingStartedPage from './GettingStartedPage';
+import RestPage from './RestPage';
 
 const items = [
   {
@@ -50,8 +51,8 @@ export default function Sidebar() {
 
   return (
     <Container id="Sidebar" sx={{ py: { sm: 'none' } }}>
-      <Grid container spacing={6}>
-        <Grid item md={3}>
+      <Grid container>
+        <Grid item md={2}>
           <Grid container item gap={1} sx={{ display: { sm: 'none' } }}>
             {items.map(({ title }, index) => (
               <Chip
@@ -88,12 +89,8 @@ export default function Sidebar() {
                     transition: 'background-color 0.3s ease',
                     '&:hover': {
                         opacity: '0.7',
-                        backgroundColor: '#A9A9A9', 
+                        backgroundColor: '#A9A9A9' 
                     },
-                    '&.Mui-selected': { 
-                        backgroundColor: '#000',
-                        color: '#fff',
-                      },
                     border: 'none'
                 }}
               >
@@ -104,19 +101,24 @@ export default function Sidebar() {
                     textAlign: 'left',
                     flexDirection: { xs: 'column', md: 'row' },
                     alignItems: { md: 'center' },
-                    gap: 2.5,
+                    gap: 1.5,
                   }}
                 >
                   <div>
                     <Link
                       color="#fff"
-                      variant="body2"
+                      variant="caption"
                       sx={{
                         display: 'inline-flex',
                         alignItems: 'center',
                         textDecoration: 'none',
+                        fontFamily: 'gow-font',
                         '& > svg': { transition: '0.2s' },
-                        '&:hover > svg': { transform: 'translateX(2px)' },
+                        '&:hover': { transform: 'translateX(2px)', color:'#000', textDecoration:  'none' },
+                        '&.Mui-selected': { 
+                            backgroundColor: '#000',
+                            color: '#fff',
+                          },
                       }}
                       onClick={(event) => {
                         event.stopPropagation();
@@ -137,7 +139,7 @@ export default function Sidebar() {
         <Grid
           item
           xs={12}
-          md={6}
+          md={10}
           sx={{ display: { xs: 'none', sm: 'flex' }, width: '100%' }}
         >
           <Card
@@ -146,12 +148,14 @@ export default function Sidebar() {
               width: '100%',
               display: { xs: 'none', sm: 'flex' },
               pointerEvents: 'none',
+              textAlign: 'left',
                 backgroundColor: '#640000',
                 boxShadow: '0px 0px 0px rgba(0, 0, 0, 0.2)', 
             }}
           >
                 {selectedItemIndex === 0 && <IntroductionPage />}
                 {selectedItemIndex === 1 && <GettingStartedPage />}
+                {selectedItemIndex === 2 && <RestPage />}
           </Card>
         </Grid>
       </Grid>
