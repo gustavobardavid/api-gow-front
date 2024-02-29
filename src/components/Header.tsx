@@ -88,8 +88,9 @@ function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                 px: 0,
               }}
             >
+              <img src="gowdblogo.png" alt="" style={{width:'70px'}}/>
              <Typography className='logo' variant="h5" color="#fff" style={{fontFamily:'gow-font'}}>
-                    GoW DB
+                   
                   </Typography>
               <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
                 <MenuItem
